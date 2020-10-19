@@ -7,12 +7,21 @@ function caps(x){
   return first + last;
 }
 
-let results = caps(sentence);
-
 function reverse(x){
-   let first = x.charAt(0);
+  let first = x.charAt(0);
   let last = x.charAt(1);
   return last + first;
 }
 
-alert(reverse(results));
+function capAndRev(){
+  caps(sentence);
+  let results = caps(sentence);
+  let reversed = reverse(results);
+  alert(sentence + reversed);
+}
+capAndRev();
+
+function getLength(sentence){
+  return sentence.length;
+}
+getLength (sentence);
